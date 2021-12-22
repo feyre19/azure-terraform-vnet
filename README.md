@@ -16,7 +16,7 @@ No requirements.
 ```hcl
 
 module "tlz_virtual_network" {
-  source                = "https://github.com/feyre19/azure-terraform-vnet"
+  source                = "git::https://github.com/feyre19/azure-terraform-vnet"
   create_vnet           = var.create_vnet_primary
   prefix                = var.prefix
   resource_group_name   = module.tlz_resource_group.resource_group.name
